@@ -1,0 +1,126 @@
+/* Início do "reset" Geral da página, retirando margem e alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    color: #323232;
+    border: none;
+
+}
+/* Fim do "reset" Geral da página, retirando margem e alguns estilos padrão */
+
+/* Início do estilo do fundo da página*/
+body {
+    background-image: url('../img/back.jpg');
+    background-size: cover; /* Tenta centralizar a imagem aproveitando o máximo do seu tamanho*/
+    background-position-y: -40px; /*Reposiciona a imagem empurrando para cima*/
+}
+/* Fim do estilo do fundo da página*/
+
+/* Retira a borda do imputy quando clica dentro do campo*/
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a {
+    font-size: .8rem; /* Dessa forma o tamanho da fonte se adequa ao tamanhao do dispoitivo*/
+}
+
+a:hover {
+    color: #08558b;
+}
+
+/*Container login*/
+
+#login-container {
+    background-color: #ffffff;
+    width: 400px;
+    margin-left: 100px;
+    padding: 20px 30px;
+    margin-top: 8vh; /* Dessa forma a altura de adequa de acordo com a tela do dispositivo*/
+    border-radius: 10px; /* Adiciona borda arredondada*/
+    text-align: center;
+}
+
+/* Formulário */
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+display: block; /* Deixa o form um embaixo do outro*/
+width: 100%;
+text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+   border-bottom: 2px solid #08558b; 
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block;
+}
+/* Como o submit não tem id, usa essa forma para que seja aplicado apenas no type (submit)*/
+input[type="submit"] {  
+    text-align: center;
+    text-transform: uppercase; /* transforma todas as letras em maiúsculas*/
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #08558b;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1b223c;
+    transition: .5s; /* diminui a transição da troca de cor do botão*/
+}
+
+/* Redes sociais */
+
+#social-container, #social-container p  {
+    margin-bottom: 20px;
+}
+
+#social-container i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.fa-linkedin {
+    background-color: #0077b5;
+}
+
+/* Registrar */
+
+#register-container p {
+    margin-bottom: 10px;
+}
