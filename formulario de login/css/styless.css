@@ -12,9 +12,9 @@
 
 /* Início do estilo do fundo da página*/
 body {
-    background-image: url('../img/back.jpg');
+    background-image: url('../img/back2.jpg');
     background-size: cover; /* Tenta centralizar a imagem aproveitando o máximo do seu tamanho*/
-    background-position-y: -40px; /*Reposiciona a imagem empurrando para cima*/
+    background-position-y: -100px; /*Reposiciona a imagem empurrando para cima*/
 }
 /* Fim do estilo do fundo da página*/
 
